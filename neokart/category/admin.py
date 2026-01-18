@@ -7,4 +7,4 @@ class CategoryAdmin(admin.ModelAdmin):
     prepopulates_fields = {'slug': ('category_name',)}
     list_display = ('category_name','slug')
 
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)
