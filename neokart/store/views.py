@@ -21,4 +21,4 @@ def store(request, category_slug=None):
         'product_count' : products.count,
     }
     
-    return render(request,'store/store.html')
+    return render(request,'store/store.html', context)
